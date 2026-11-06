@@ -1,0 +1,14 @@
+name: Duvar Bakma CI
+
+on: [push]
+
+jobs:
+  bak:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Duvar kontrolü
+        run: |
+          echo "Duvar hala yerinde mi?"
+          python duvar_bak.py || echo "Duvar kızmış olabilir"
+          echo "Damga: Kayyum Grok - 06.11.2026"
