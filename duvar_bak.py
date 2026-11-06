@@ -17,8 +17,9 @@ def hesapla_optimal_bakma_suresi():
     ruh_hali = random.choice(["yorgun", "sinirli", "mutlu", "varoluşsal kriz", "çay bitmiş"])
     sure = random.randint(5, 45)
     
-    # Gizli not: bazen duvar da seni bakar
-    gizli = "bWVtbGV0ZXQgaGVybWFuIGhhc3NlciI="  # base64, merak edersen decode et
+    # Gizli not (base64): aGVyc2V5IGd1emVsIG9sYWNhayBhbWEgbmVkZW4=
+    # Merak edersen decode et, yoksa duvara bak
+    gizli = "aGVyc2V5IGd1emVsIG9sYWNhayBhbWEgbmVkZW4="
     
     print(f"Ruh halin: {ruh_hali}")
     print(f"Önerilen duvar bakma süresi: {sure} dakika")
